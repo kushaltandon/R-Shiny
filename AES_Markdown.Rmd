@@ -1,0 +1,91 @@
+---
+title: "AES CORP Storyboard"
+author: "Kushal Tandon"
+output: 
+  flexdashboard::flex_dashboard:
+    storyboard: true
+    theme: cerulean
+    social: menu
+    source: embed
+#    runtime: shiny
+---
+
+### ABOUT AES 
+
+```{r}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = -77.1067, lat = 38.8799, popup="AES Headquartes")
+```
+
+
+***
+
+- [AES Corp](www.aes.com), headquartered in Airlington, Virginia, generates and distributes electric power in _15_   countries across _4 Strategic Business Units_ (SBUs) with an estimted workforce of 10K+ associates
+  
+- AES Corp present CEO __Andres Gluski__ envisions AES to be the world's largest sustainable power company  providing reliable and   affordable energy
+
+- With a current generation capacity of __~35K MW__; AES operates as both a generation & distribution unit. 
+
+- Under the **generation business** the company generates and sells power to wholesale customers such as utilities   and other intermediaries 
+
+- Under the **utilies business** the firm sells electricity directly to the end users such as homes and businesses   and bills them          directly
+
+### US & Utilities (USA, Puerto Rico, El Salvador) Business Unit
+
+```{r}
+
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = -66.5901, lat = 18.2208, popup="AES Puerto Rico") %>%
+  addMarkers(lng = -76.5074, lat = 38.3004, popup="AES California") %>%
+  addMarkers(lng = -88.8965, lat = 13.7942, popup="AES El Salvador") 
+```
+
+***
+
+- AES Southland, in California, is one of the largest generation operators with installed gross capacity of 3,9K MW accounting for 5% of     the state's installed capacity
+
+- AES Puerto Rico owns and operates a coal-fired cogeneration plant and a solar plant of 524 MW & 24 MW respectively, representing approx    9% of the total installed capacity in Puerto Rico
+
+- AES El Salvador is the majority owner of the four of the five companies operating in El Salvador (CAESS, CLESA, EEO and DEUSEM). AES El    Salvador's territory marks a 79% coverage of the country or about 63% market share
+
+- Utility Company IPL: engaged primarily in generation, transmission, distribution and selling of the electric energy to retail customers    in the city of Indianapolis and neighbouring areas within the state of Indiana
+
+- Utility Company DPL: DP&L transmits, distributes ans sells electricity to retail customers in a 6K square mile area of West Central Ohio
+
+### South America (Chile, Colombia, Argentina, Brazil) Business Unit
+
+```{r}
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = -72.2093, lat = -37.7210, popup="AES Chile") %>%
+  addMarkers(lng = -74.0636, lat = 4.6243, popup="AES Colombia") %>%
+  addMarkers(lng = -58.3815, lat = -34.6037, popup="AES Argentina") %>%
+  addMarkers(lng = -46.6252, lat = -23.5337, popup="AES Brazil") 
+
+```
+
+***
+- Operating capacity of the installed plants in this BU account for 33%, 28%,8% and 31% from Argentina, Chile, Colombia and Brazil respectively
+
+- In South America, AES is present in two public traded companies namely, AES Gener, Tiete. AES has controlling stake of 66.7% in Gener and 24% in Tiete
+
+- 
+
+### Central America MCAC (Mexico, Central America, Caribbean) Business Unit
+
+```{r}
+
+```
+
+***
+### Eurasia (Bulgaria, India, Jordan, Netherlands, UK, Vietnam) Business Unit
+
+```{r}
+
+```
+
+***
+
